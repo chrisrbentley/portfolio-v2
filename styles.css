@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'CascadiaCode';
+	src: url(CascadiaCode.woff2);
+}
+
+body {
+	font-family: CascadiaCode, monospace;
+	background-color: #232634;
+	color: #c6d0f5;
+	font-size: 100%;
+	margin: 20px;
+}
+
+#name > h1 {
+	font-size: 2.5em;
+}
+
+p {
+	color: #b5bfe2;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.project-buttons {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.preview-source {
+	padding: 8px;
+	border: none;
+	background-color: #232634;
+	border: solid 2px #303446;
+	color: #b5bfe2;
+	border-radius: 10px;
+	text-decoration: none;
+}
