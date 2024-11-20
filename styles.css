@@ -3,19 +3,29 @@
 	src: url(CascadiaCode.woff2);
 }
 
-main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-	min-height: calc(100vh - 60px); /* Adjust for footer height */
-}
-
 body {
 	font-family: CascadiaCode, monospace;
 	/* background-color: #181825; */
 	background: linear-gradient(145deg, #181825, #1e1e2e);
 	color: #cdd6f4;
 	font-size: 100%;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	min-height: 100vh;
+	margin: 0;
+}
+
+header {
+	max-width: 800px;
+	margin: 0 20px;
+}
+
+main {
+	max-width: 800px;
+	/* margin: 0 auto; */
+	flex-grow: 1;
+	margin: 0 20px;
 }
 
 #name > h1 {
@@ -77,10 +87,9 @@ footer {
 	/* background-color: #11111b; */
 	/* background: radial-gradient(circle, #11111b, #0f0f1a); */
 	background: linear-gradient(145deg, #11111b, #1e1e2e);
-	position: fixed;
-	left: 0;
-	bottom: 0;
 	width: 100%;
+	padding: 10px 0;
+	margin-top: 25px;
 }
 
 @keyframes fadeIn {
